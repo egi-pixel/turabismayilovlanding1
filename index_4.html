@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Turab İsmayılov – Estetik & Plastik Cerrahi</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KPVJ836L');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; background: #fff; }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 40px; background: #fff; border-bottom: 1px solid #eee;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-logo { font-weight: 700; font-size: 1rem; letter-spacing: .02em; }
+    .nav-logo span { color: #b08d57; }
+    .nav-links { display: flex; gap: 24px; align-items: center; font-size: .92rem; }
+    .nav-links a { color: #444; transition: color .2s; }
+    .nav-links a:hover { color: #b08d57; }
+    .btn-nav {
+      background: #b08d57; color: #fff !important; padding: 9px 20px;
+      border-radius: 6px; font-weight: 600; transition: background .2s;
+    }
+    .btn-nav:hover { background: #9a7a48; }
+
+    /* HERO */
+    .hero {
+      display: flex; align-items: center; gap: 60px;
+      padding: 80px 40px; max-width: 1200px; margin: 0 auto;
+    }
+    .hero-text { flex: 1; }
+    .hero-badge {
+      display: inline-block; background: #f5f0e8; color: #b08d57;
+      font-size: .8rem; font-weight: 700; letter-spacing: .1em;
+      padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; text-transform: uppercase;
+    }
+    .hero-text h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 18px; color: #111; }
+    .hero-text h1 em { color: #b08d57; font-style: normal; }
+    .hero-text p { font-size: 1.05rem; color: #555; line-height: 1.7; margin-bottom: 32px; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: #b08d57; color: #fff; padding: 14px 28px;
+      border-radius: 8px; font-weight: 700; font-size: 1rem; transition: background .2s;
+    }
+    .btn-primary:hover { background: #9a7a48; }
+    .btn-secondary {
+      border: 2px solid #b08d57; color: #b08d57; padding: 12px 28px;
+      border-radius: 8px; font-weight: 600; font-size: 1rem; transition: all .2s;
+    }
+    .btn-secondary:hover { background: #b08d57; color: #fff; }
+    .hero-stats { display: flex; gap: 32px; margin-top: 40px; }
+    .stat { text-align: center; }
+    .stat .num { font-size: 1.8rem; font-weight: 800; color: #b08d57; }
+    .stat .label { font-size: .8rem; color: #777; margin-top: 2px; }
+    .hero-img { flex: 0 0 400px; }
+    .hero-img img { width: 100%; border-radius: 16px; object-fit: cover; box-shadow: 0 20px 60px rgba(0,0,0,.12); }
+    .hero-card {
+      background: #fff; border-radius: 12px; padding: 16px 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.1); margin-top: -40px; margin-left: 20px;
+      display: inline-block; font-size: .88rem;
+    }
+    .hero-card strong { display: block; font-size: .95rem; color: #111; }
+    .hero-card span { color: #777; font-size: .8rem; }
+
+    /* FORM */
+    .form-section {
+      background: linear-gradient(135deg, #f9f6f0 0%, #fff 100%);
+      padding: 80px 40px;
+    }
+    .form-section h2 { text-align: center; font-size: 2rem; margin-bottom: 10px; }
+    .form-section h2 em { color: #b08d57; font-style: normal; }
+    .form-section .sub { text-align: center; color: #666; margin-bottom: 50px; font-size: 1rem; }
+    .form-wrap { display: flex; gap: 60px; max-width: 1100px; margin: 0 auto; align-items: flex-start; }
+    .form-features { flex: 1; }
+    .feature-item { display: flex; gap: 16px; margin-bottom: 28px; }
+    .feature-icon { width: 44px; height: 44px; background: #b08d57; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; font-size: 1.1rem; }
+    .feature-item h4 { font-size: .95rem; font-weight: 700; margin-bottom: 4px; }
+    .feature-item p { font-size: .85rem; color: #666; line-height: 1.5; }
+    .form-box { flex: 1; background: #fff; border-radius: 16px; padding: 36px; box-shadow: 0 10px 40px rgba(0,0,0,.08); }
+    .form-box h3 { font-size: 1.3rem; margin-bottom: 24px; color: #111; }
+    .form-box input, .form-box select {
+      width: 100%; padding: 13px 16px; border: 1.5px solid #e0d8cc;
+      border-radius: 8px; font-size: .95rem; margin-bottom: 14px;
+      transition: border .2s; outline: none; font-family: inherit;
+    }
+    .form-box input:focus, .form-box select:focus { border-color: #b08d57; }
+    .form-box button {
+      width: 100%; background: #b08d57; color: #fff; border: none;
+      padding: 15px; border-radius: 8px; font-size: 1rem; font-weight: 700;
+      cursor: pointer; transition: background .2s;
+    }
+    .form-box button:hover { background: #9a7a48; }
+    .form-note { font-size: .75rem; color: #999; text-align: center; margin-top: 12px; line-height: 1.5; }
+
+    /* SERVICES */
+    .services { padding: 80px 40px; max-width: 1200px; margin: 0 auto; }
+    .section-label { text-align: center; color: #b08d57; font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+    .section-title { text-align: center; font-size: 2rem; margin-bottom: 10px; }
+    .section-title em { color: #b08d57; font-style: normal; }
+    .section-sub { text-align: center; color: #666; margin-bottom: 50px; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .service-card {
+      border: 1.5px solid #eee; border-radius: 14px; padding: 28px;
+      transition: all .2s; cursor: pointer;
+    }
+    .service-card:hover { border-color: #b08d57; box-shadow: 0 8px 30px rgba(176,141,87,.1); transform: translateY(-2px); }
+    .service-num { font-size: .75rem; font-weight: 700; color: #b08d57; letter-spacing: .1em; margin-bottom: 10px; }
+    .service-card h3 { font-size: 1.05rem; margin-bottom: 10px; }
+    .service-card p { font-size: .85rem; color: #666; line-height: 1.6; margin-bottom: 16px; }
+    .service-link { color: #b08d57; font-size: .85rem; font-weight: 600; }
+
+    /* REVIEWS */
+    .reviews { background: #f9f6f0; padding: 80px 40px; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1200px; margin: 40px auto 0; }
+    .review-card { background: #fff; border-radius: 14px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,.05); }
+    .review-card .quote { font-size: 1.5rem; color: #b08d57; margin-bottom: 12px; }
+    .review-card p { font-size: .88rem; color: #444; line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+    .reviewer { display: flex; align-items: center; gap: 12px; }
+    .reviewer-avatar { width: 40px; height: 40px; background: #b08d57; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: .85rem; }
+    .reviewer-name { font-weight: 700; font-size: .88rem; }
+    .reviewer-proc { font-size: .78rem; color: #999; }
+
+    /* CONTACT */
+    .contact { padding: 80px 40px; max-width: 1200px; margin: 0 auto; }
+    .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .contact-card { border: 1.5px solid #eee; border-radius: 14px; padding: 28px; text-align: center; }
+    .contact-card h4 { font-size: .85rem; color: #999; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
+    .contact-card p { font-size: .95rem; color: #222; line-height: 1.6; }
+    .contact-card a { color: #b08d57; font-weight: 600; }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, #111 0%, #2a2a2a 100%);
+      color: #fff; text-align: center; padding: 80px 40px;
+    }
+    .cta h2 { font-size: 2rem; margin-bottom: 10px; }
+    .cta h2 em { color: #b08d57; font-style: normal; }
+    .cta p { color: #aaa; margin-bottom: 32px; font-size: 1rem; }
+    .cta-btns { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .btn-gold { background: #b08d57; color: #fff; padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1rem; transition: background .2s; }
+    .btn-gold:hover { background: #9a7a48; }
+    .btn-whatsapp { background: #25D366; color: #fff; padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1rem; }
+
+    /* BADGES */
+    .badges { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1200px; margin: 30px auto 0; }
+    .badge { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: 12px; padding: 20px; text-align: center; }
+    .badge-icon { font-size: 1.5rem; margin-bottom: 8px; }
+    .badge h4 { font-size: .88rem; font-weight: 700; margin-bottom: 4px; }
+    .badge p { font-size: .75rem; color: #aaa; }
+
+    /* FOOTER */
+    footer {
+      background: #111; color: #aaa; padding: 30px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px; font-size: .85rem;
+    }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { color: #aaa; transition: color .2s; }
+    .footer-links a:hover { color: #b08d57; }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: #f1f1f1; border-top: 1px solid #ddd;
+      text-align: center; padding: 14px 20px;
+      font-size: .78rem; color: #888; line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; padding: 40px 20px; }
+      .hero-img { flex: none; width: 100%; }
+      .hero-text h1 { font-size: 1.8rem; }
+      .services-grid, .reviews-grid, .contact-grid, .badges { grid-template-columns: 1fr; }
+      .form-wrap { flex-direction: column; }
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPVJ836L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><img src="logo.png" alt="Op. Dr. Turab İsmayılov" style="height:44px; vertical-align:middle;" /></div>
+  <div class="nav-links">
+    <a href="tel:+905466398033">+90 546 639 80 33</a>
+    <a href="#randevu" class="btn-nav">Ücretsiz Konsültasyon</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <div class="hero-badge">Plastik & Estetik Cerrahi Uzmanı</div>
+    <h1>Doğal güzelliğinizi <em>yeniden keşfedin.</em></h1>
+    <p>Hacettepe Üniversitesi Tıp Fakültesi mezunu, Anatomi alanında doktora sahibi Op. Dr. Turab İsmayılov, 15 yılı aşkın deneyimi ve 6.000'den fazla operasyonuyla her hastasına doğal ve kalıcı sonuçlar sunar.</p>
+    <div class="hero-btns">
+      <a href="#randevu" class="btn-primary">Ücretsiz Randevu Al</a>
+      <a href="#hizmetler" class="btn-secondary">Hizmetleri İncele</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">6.000+</div><div class="label">Başarılı Operasyon</div></div>
+      <div class="stat"><div class="num">15+</div><div class="label">Yıl Deneyim</div></div>
+      <div class="stat"><div class="num">%98</div><div class="label">Hasta Memnuniyeti</div></div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="doctor.jpg" alt="Dr. Turab İsmayılov" />
+    <div class="hero-card">
+      Clinic For Us — Şişli, İstanbul<br>
+      <strong>Op. Dr. Turab İsmayılov</strong>
+      <span>Plastik, Rekonstrüktif & Estetik Cerrahi</span>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="randevu">
+  <h2>İlk adımı <em>bugün atın</em></h2>
+  <p class="sub">Formu doldurun, ekibimiz 24 saat içinde sizinle iletişime geçsin. Konsültasyon tamamen ücretsizdir.</p>
+  <div class="form-wrap">
+    <div class="form-features">
+      <div class="feature-item">
+        <div class="feature-icon">✓</div>
+        <div>
+          <h4>24 saat içinde yanıt</h4>
+          <p>Formunuzu aldıktan sonra kliniğimiz en kısa sürede sizi arar.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔒</div>
+        <div>
+          <h4>%100 gizlilik</h4>
+          <p>Bilgileriniz yalnızca randevu sürecinde kullanılır, üçüncü şahıslarla paylaşılmaz.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">★</div>
+        <div>
+          <h4>Ücretsiz değerlendirme</h4>
+          <p>İlk konsültasyonunuz tamamen ücretsizdir, hiçbir yükümlülük doğurmaz.</p>
+        </div>
+      </div>
+    </div>
+    <div class="form-box">
+      <h3>Ücretsiz Konsültasyon Talep Edin</h3>
+      <form name="contact" method="POST" action="#">
+        <input type="text" name="ad-soyad" placeholder="Ad Soyad" required />
+        <input type="tel" name="telefon" placeholder="Telefon Numarası" required />
+        <select name="hizmet" required>
+          <option value="" disabled selected>İlgilendiğiniz Hizmet</option>
+          <option>Burun Estetiği (Rinoplasti)</option>
+          <option>Liposuction</option>
+          <option>Karın Germe</option>
+          <option>Yüz Germe (Face Lift)</option>
+          <option>Lipödem Tedavisi</option>
+          <option>Bacak Germe</option>
+          <option>Diğer / Birden Fazla</option>
+        </select>
+        <button type="submit">Ücretsiz Randevu Talep Et</button>
+      </form>
+      <p class="form-note">Formu göndererek kişisel verilerinizin randevu amacıyla işlenmesini kabul etmiş olursunuz. Bilgileriniz üçüncü şahıslarla paylaşılmaz.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="hizmetler">
+  <div class="section-label">Hizmetlerimiz</div>
+  <h2 class="section-title">Her ihtiyaca özel <em>estetik çözümler</em></h2>
+  <p class="section-sub">Gelişmiş teknikler ve kişiselleştirilmiş yaklaşımla, her operasyonda en doğal ve kalıcı sonuçları sunuyoruz.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <h3>Burun Estetiği — Rinoplasti</h3>
+      <p>Yüz hatlarınızla tam uyumlu, fonksiyonel ve estetik burun şekillendirmesi. Hem görsel hem de nefes kalitesini iyileştiren kapsamlı operasyonlar.</p>
+      <a href="#randevu" class="service-link">Randevu Al →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <h3>Liposuction</h3>
+      <p>Diyetle gidemeyen inatçı yağ birikimlerinden kurtulun. Vücut hatlarınızı yeniden şekillendiren modern liposuction teknikleri.</p>
+      <a href="#randevu" class="service-link">Randevu Al →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <h3>Karın Germe — Abdominoplasti</h3>
+      <p>Gebelik veya kilo değişimlerinin ardından sarkma yaşayan karın bölgesi için sıkı ve düz bir görünüm sunan cerrahi çözüm.</p>
+      <a href="#randevu" class="service-link">Randevu Al →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <h3>Yüz Germe — Face Lift</h3>
+      <p>Zamanın izlerini silen, gençlik enerjisini yüzünüze yansıtan profesyonel yüz germe operasyonları. Doğal ve çarpıcı sonuçlar.</p>
+      <a href="#randevu" class="service-link">Randevu Al →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <h3>Lipödem Tedavisi</h3>
+      <p>Bacak ve kalçalardaki patolojik yağ birikimini gidererek ağrıyı azaltın, hareketliliğinizi ve yaşam kalitenizi artırın.</p>
+      <a href="#randevu" class="service-link">Randevu Al →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <h3>Bacak Germe</h3>
+      <p>Bacak bölgesindeki sarkma ve gevşemeleri cerrahi olarak düzelterek daha sıkı, pürüzsüz ve estetik bacak hatları elde edin.</p>
+      <a href="#randevu" class="service-link">Randevu Al →</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="section-label">Hasta Yorumları</div>
+  <h2 class="section-title" style="text-align:center;">Hastalarımız <em>ne diyor?</em></h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="quote">"</div>
+      <p>Rinoplasti operasyonu için çok araştırma yaptım. Dr. Turab'ın doğal sonuç odaklı yaklaşımı beni etkiledi. Operasyondan çok memnunum, yüzümle uyumlu ve tam istediğim gibi.</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">AY</div>
+        <div><div class="reviewer-name">Ayşe Y.</div><div class="reviewer-proc">Rinoplasti</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="quote">"</div>
+      <p>Liposuction ile vücut hatlarımda inanılmaz bir değişim yaşadım. Doktor ve ekibi süreç boyunca çok destekleyiciydi. Sonuç tam olarak hayal ettiğim gibiydi.</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">MK</div>
+        <div><div class="reviewer-name">Mehmet K.</div><div class="reviewer-proc">Liposuction</div></div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="quote">"</div>
+      <p>Yıllardır lipödem nedeniyle çok zorlandım. Dr. Turab'ın tedavisiyle ağrılarım geçti, hayat kalitem arttı. Kendimi çok daha enerjik hissediyorum.</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">SD</div>
+        <div><div class="reviewer-name">Selin D.</div><div class="reviewer-proc">Lipödem Tedavisi</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <div class="section-label">İletişim</div>
+  <h2 class="section-title">Bize <em>ulaşın</em></h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h4>Klinik Adresi</h4>
+      <p>Teşvikiye Mah., Sezai Selek Sokak No:17<br>Çağlayan Apt. D:3, Şişli / İstanbul</p>
+    </div>
+    <div class="contact-card">
+      <h4>Telefon</h4>
+      <p><a href="tel:+905466398033">+90 546 639 80 33</a></p>
+    </div>
+    <div class="contact-card">
+      <h4>Klinik</h4>
+      <p>Clinic For Us<br><a href="https://maps.google.com/?q=Teşvikiye+Mah.+Sezai+Selek+Sokak+No:17+Şişli+İstanbul" target="_blank">Haritada Gör →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Hayalinizdeki görünüme <em>kavuşmaya hazır mısınız?</em></h2>
+  <p>Ücretsiz konsültasyon için bugün bize ulaşın.</p>
+  <div class="cta-btns">
+    <a href="#randevu" class="btn-gold">Randevu Al</a>
+    <a href="https://wa.me/905466398033" class="btn-whatsapp" target="_blank">WhatsApp</a>
+  </div>
+  <div class="badges">
+    <div class="badge"><div class="badge-icon">🛡</div><h4>Güvenli Operasyon</h4><p>Uluslararası protokoller</p></div>
+    <div class="badge"><div class="badge-icon">📞</div><h4>7/24 Destek</h4><p>Operasyon sonrası takip</p></div>
+    <div class="badge"><div class="badge-icon">✨</div><h4>Doğal Sonuçlar</h4><p>Kişiye özel teknikler</p></div>
+    <div class="badge"><div class="badge-icon">🔒</div><h4>Gizlilik Garantisi</h4><p>%100 hasta mahremiyeti</p></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2025 Op. Dr. Turab İsmayılov — Clinic For Us, Şişli / İstanbul. Tüm hakları saklıdır.</div>
+  <div class="footer-links">
+    <a href="https://www.turabismayilov.com" target="_blank">Web Sitesi</a>
+    <a href="#randevu">Randevu</a>
+    <a href="#hizmetler">Hizmetler</a>
+  </div>
+</footer>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  Bu web sitesindeki içerikler yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz. Tedavi kararları için lütfen uzman bir hekime danışınız.
+</div>
+
+</body>
+</html>
