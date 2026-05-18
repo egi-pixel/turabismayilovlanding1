@@ -187,6 +187,22 @@
       .nav-links { display: none; }
     }
   </style>
+  <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+    'send_to': 'AW-597290001/QPd0CIzI168eEJHY55wC',
+    'value': 1.0,
+    'currency': 'TRY',
+    'event_callback': callback
+  });
+  return false;
+}
+</script>
 </head>
 <body>
 
@@ -384,7 +400,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>Ücretsiz konsültasyon için bugün bize ulaşın.</p>
   <div class="cta-btns">
     <a href="#randevu" class="btn-gold">Randevu Al</a>
-    <a href="https://wa.me/905466398033" class="btn-whatsapp" target="_blank">WhatsApp</a>
+    <a href="https://wa.me/905466398033" class="btn-whatsapp" target="_blank" onclick="gtag_report_conversion('https://wa.me/905466398033')">WhatsApp</a>
   </div>
   <div class="badges">
     <div class="badge"><div class="badge-icon">🛡</div><h4>Güvenli Operasyon</h4><p>Uluslararası protokoller</p></div>
